@@ -19,9 +19,9 @@ npm run build
 
 ## Deployment
 
-The project is configured for a repository named `adhdmixing`. Pushing `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site and deploys it to GitHub Pages.
+The project is configured for a repository named `adhd-mixing-site`. Pushing `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site and deploys it to GitHub Pages.
 
-In the repository settings, set **Settings → Pages → Source** to **GitHub Actions** once. The expected URL is `https://<github-username>.github.io/adhdmixing/`.
+In the repository settings, set **Settings → Pages → Source** to **GitHub Actions** once. The expected URL is `https://<github-username>.github.io/adhd-mixing-site/`.
 
 For a custom domain, build with `VITE_BASE_URL=/`.
 
