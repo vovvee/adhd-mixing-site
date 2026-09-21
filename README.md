@@ -1,6 +1,6 @@
 # ADHD Mixing
 
-A fast, static portfolio site for **ADHD Mixing** — mixing, vocal production, and project mixing.
+A fast, responsive portfolio site for **ADHD Mixing** — mixing, vocal production, and project mixing.
 
 ## Local development
 
@@ -19,23 +19,18 @@ npm run build
 
 ## Deployment
 
-The project is configured for a repository named `adhd-mixing-site`. Pushing `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site and deploys it to GitHub Pages.
+The project is configured for the `adhd-mixing-site` repository. Pushing `main` runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which builds the site and deploys it to GitHub Pages.
 
-In the repository settings, set **Settings → Pages → Source** to **GitHub Actions** once. The expected URL is `https://<github-username>.github.io/adhd-mixing-site/`.
+The expected URL is `https://<github-username>.github.io/adhd-mixing-site/`.
 
 For a custom domain, build with `VITE_BASE_URL=/`.
 
 ## Audio
 
-Place MP3 comparisons under [`public/audio/`](public/audio/README.md) using the documented before/after filenames. The player is native HTML5 and audio is not preloaded.
+Before/after comparison files live under [`public/audio/`](public/audio/README.md). The player is native HTML5 and audio is not preloaded.
 
 ## Editing content
 
-All editable site copy lives in [`src/data/site.ts`](src/data/site.ts):
+The site copy, services, project information, contact links, and process are stored in [`index.html`](index.html). Replace the sample project details and audio paths when new work is ready.
 
-- `pricing` — prices, inclusions, conditions, revisions
-- `projects` — artist names, descriptions, genres, and audio paths
-- `contact` — email and Instagram URL
-- `about` — biography placeholders
-
-> The original pricing PDF was not included in the workspace. The price cards deliberately retain clear placeholders and a TODO instead of invented figures or terms.
+> Pricing is intentionally omitted because no pricing PDF or final price list was included in the source repository.
